@@ -36,7 +36,9 @@ public class LoadingScene : MonoBehaviour
                 progressBar.fillAmount = Mathf.Lerp(0.9f, 1f, timer);
                 if(progressBar.fillAmount >= 1f)
                 {
+                    Debug.Log("1");
                     op.allowSceneActivation = true;
+                    Debug.Log("2");
                     yield break;
                 }
             }

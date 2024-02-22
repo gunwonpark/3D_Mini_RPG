@@ -19,14 +19,14 @@ public class PlayerInteraction : MonoBehaviour
         if (other.CompareTag("Interactable"))
         {
             _currentInteractObject = other.gameObject.GetComponent<IInteractable>();
-            _currentInteractObject.OnInteractionEnter();
+            _currentInteractObject?.OnInteractionEnter();
         }
     }
     private void OnTriggerExit(Collider other)
     {
         if (other.CompareTag("Interactable"))
         {
-            _currentInteractObject.OnInteractionExit();
+            _currentInteractObject?.OnInteractionExit();
             _currentInteractObject = null;
         }
     }
