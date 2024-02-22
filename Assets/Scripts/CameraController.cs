@@ -13,8 +13,14 @@ public class CameraController : MonoBehaviour
 
     void LateUpdate()
     {
+        if (_target == null) return;
+
         _offset = (Vector3.forward * -distance) + (Vector3.up * height);
         transform.position = _target.position + _offset;
         transform.LookAt(_target.position);
+    }
+    public void SetTarget(Transform target)
+    {
+        _target = target;
     }
 }

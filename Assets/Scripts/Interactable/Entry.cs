@@ -5,11 +5,12 @@ using TMPro;
 public class Entry : MonoBehaviour, IInteractable
 {
     [SerializeField] private TextMeshPro _text;
-    //이름을 토대로 맵 생성
+    // TODO 이름을 토대로 맵 생성 
     [SerializeField] private string _dungeonName;
     public void OnInteract()
     {
-        GameManager.SceneManager.ChangeScene(SceneState.DungeonScene);
+        LoadingScene.nextScene = "DungeonScene";
+        GameManager.SceneManager.ChangeScene(SceneState.LoadingScene);
     }
 
     public void OnInteractionEnter()

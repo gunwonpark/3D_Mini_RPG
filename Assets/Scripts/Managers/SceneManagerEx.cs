@@ -14,7 +14,9 @@ public interface IBaseScene
 public enum SceneState
 {
     MainScene,
+    LoadingScene,
     DungeonScene
+    
 }
 
 public class SceneManagerEx

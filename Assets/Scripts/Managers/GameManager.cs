@@ -12,6 +12,7 @@ public class GameManager : MonoBehaviour
     public static ResourceManager ResourceManager { get { return _instance._resource; } }   
     public static SceneManagerEx SceneManager { get { return _instance._scene; } }
 
+    
     private void Awake()
     {
         Init();
