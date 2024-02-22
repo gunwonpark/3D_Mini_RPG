@@ -7369,7 +7369,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9ff227429c35b0b4a9a367e1ba3d961e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _text: {fileID: 0}
+  _text: {fileID: 867723962}
+  _dungeonName: 
 --- !u!65 &663481034
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -9915,7 +9916,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &867723961
 RectTransform:
   m_ObjectHideFlags: 0
@@ -10151,6 +10152,7 @@ GameObject:
   - component: {fileID: 874270114}
   - component: {fileID: 874270113}
   - component: {fileID: 874270112}
+  - component: {fileID: 874270116}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -10238,6 +10240,18 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &874270116
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 874270111}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 819c4408b7d214d47a7d18d408501481, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &886763015
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -14117,6 +14131,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1332208647}
   - component: {fileID: 1332208648}
+  - component: {fileID: 1332208649}
   m_Layer: 0
   m_Name: Entry
   m_TagString: Interactable
@@ -14161,6 +14176,20 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 5, y: 5, z: 5}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &1332208649
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1332208646}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9ff227429c35b0b4a9a367e1ba3d961e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _text: {fileID: 1950494295}
+  _dungeonName: 
 --- !u!1001 &1335419046
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -20282,7 +20311,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh-251856
+  m_Name: pb_Mesh69142
   serializedVersion: 11
   m_SubMeshes:
   - serializedVersion: 2
@@ -22453,7 +22482,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1950494294
 RectTransform:
   m_ObjectHideFlags: 0
